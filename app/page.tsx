@@ -37,8 +37,6 @@ async function getChores() {
 export default async function Home() {
   const chores = await getChores();
 
-  console.log(chores);
-
   return (
     <>
       <h1 className="text-3xl py-4">My chores</h1>
