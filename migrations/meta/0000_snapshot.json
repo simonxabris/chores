@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "sqlite",
-  "id": "eec9b8c1-2c75-45cb-9c5b-2ebceb0e5ba0",
+  "id": "e82167df-efae-4d92-ba49-3cd2f253772c",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "chore": {
@@ -40,7 +40,8 @@
           "type": "integer",
           "primaryKey": false,
           "notNull": false,
-          "autoincrement": false
+          "autoincrement": false,
+          "default": false
         },
         "completed_by": {
           "name": "completed_by",

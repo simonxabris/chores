@@ -12,7 +12,7 @@ export const chore = sqliteTable("chore", {
   name: text("name").notNull(),
   description: text("description"),
   due_date: integer("due_date", { mode: "timestamp" }).notNull(),
-  completed: integer("completed", { mode: "boolean" }),
+  completed: integer("completed", { mode: "boolean" }).default(false),
   completed_by: integer("completed_by"),
   created_by: integer("created_by"),
   created_at: integer("created_at").default(sql`CURRENT_TIMESTAMP`),
